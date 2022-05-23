@@ -1,0 +1,104 @@
+:root{
+    --color-dark: #141414;
+    --color-grey: lightgrey;
+    --color-white: #fff;
+}
+
+.none{
+    display: none;
+}
+
+.navbar-appbar{
+    background-color: var( --color-dark );
+}   
+
+.load-page{
+    background-color: var( --color-dark );
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    text-align: center;
+    margin: 1rem auto;
+    display: block;
+    width: 8rem;
+    height: 8rem;
+}
+
+
+.alert-danger{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.btn-burger-menu{
+    color: var( --color-white );
+    font-size: 30px;
+}
+.btn-burger-menu:hover {   
+    color: var( --color-grey );
+}
+
+.btn-outline-white{
+    color: var( --color-white );
+    border: 1px solid var( --color-white );
+    background-color: transparent;
+}
+
+.btn-outline-white:hover, .btn-outline-white:active, .btn-outline-white:focus {
+    color: var( --color-dark );
+    border: 1px solid var( --color-dark );
+    background-color: var( --color-white );
+}
+
+#search-form{
+    width: 100%;
+}
+#search-form input{
+    width: 75vw;
+    margin: 0!important;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+#search-form button{
+    width: 10vw;
+    margin: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.menu-list{
+    margin: 0;
+    list-style: none;
+    border-top: 1px solid var( --color-white );
+    background-color: var( --color-dark );
+    padding: 0 2rem;
+}
+.menu-list .menu-item{
+    padding: 25px 0;
+    border-bottom: 1px solid var( --color-grey );
+}
+.menu-list a.menu-link{
+    text-align: left;
+    color: var( --color-white );
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    width: 80vw;
+    transition: all 300ms;
+}
+
+.menu-list a.menu-link:hover, .menu-list a.menu-link:active, .menu-list a.menu-link:focus{
+    color: var( --color-grey );
+    padding-left: 10px;
+}
